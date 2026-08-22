@@ -4,6 +4,19 @@
 
 ---
 
+## 📦 레포지토리 구성 (Repositories)
+
+| 구분 | Repository | Description | 바로가기 |
+| :--- | :--- | :--- | :--- |
+| **문서/기획** | **`docs`** | API 명세서, WBS, 프로젝트 요구사항 및 문서 | [📌 바로가기](https://github.com/toilet-project/docs) |
+| **백엔드 API** | **`toilet-api`** | 메인 서비스 REST API 백엔드 서버 | [📌 바로가기](https://github.com/toilet-project/toilet-api) |
+| **어드민 API** | **`toilet-admin-api`** | 관리자 전용 백엔드 API 서버 | [📌 바로가기](https://github.com/toilet-project/toilet-admin-api) |
+| **배치** | **`toilet-batch`** | 공공데이터 수집 및 DB 동기화 Batch 서버 | [📌 바로가기](https://github.com/toilet-project/toilet-batch) |
+| **프론트엔드** | **`toilet-web`** | 사용자/지도 기반 Web 프론트엔드 (React) | [📌 바로가기](https://github.com/toilet-project/toilet-web) |
+| **조직 설정** | **`.github`** | Organization 프로필 및 공통 설정 | [📌 바로가기](https://github.com/toilet-project/.github) |
+
+---
+
 ## 📌 1. 프로젝트 개요 (Overview)
 
 * **프로젝트명**: 위치 기반 공중화장실 정보 공유 서비스
