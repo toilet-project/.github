@@ -1,63 +1,53 @@
 # 🚽 위치 기반 공중화장실 정보 공유 서비스 (Toilet Project)
 
-> **공공데이터를 기반으로 사용자의 현재 위치 주변 공중화장실 정보를 빠르게 제공하고, 사용자 참여형 정보 공유 환경을 구축하는 서비스입니다.**
+> **공공데이터 기반의 빠르고 정확한 사용자 위치 맞춤형 공중화장실 공유 플랫폼**
 
----
+<br/>
 
 ## 📦 레포지토리 구성 (Repositories)
 
 | 구분 | Repository | Description | 바로가기 |
-| :--- | :--- | :--- | :--- |
-| **문서/기획** | **`docs`** | API 명세서, WBS, 프로젝트 요구사항 및 문서 | [📌 바로가기](https://github.com/toilet-project/docs) |
-| **백엔드 API** | **`toilet-api`** | 메인 서비스 REST API 백엔드 서버 | [📌 바로가기](https://github.com/toilet-project/toilet-api) |
-| **어드민 API** | **`toilet-admin-api`** | 관리자 전용 백엔드 API 서버 | [📌 바로가기](https://github.com/toilet-project/toilet-admin-api) |
-| **배치** | **`toilet-batch`** | 공공데이터 수집 및 DB 동기화 Batch 서버 | [📌 바로가기](https://github.com/toilet-project/toilet-batch) |
-| **프론트엔드** | **`toilet-web`** | 사용자/지도 기반 Web 프론트엔드 (React) | [📌 바로가기](https://github.com/toilet-project/toilet-web) |
-| **조직 설정** | **`.github`** | Organization 프로필 및 공통 설정 | [📌 바로가기](https://github.com/toilet-project/.github) |
+| :---: | :--- | :--- | :---: |
+| **기획/문서** | **`docs`** | API 명세서, WBS, 프로젝트 요구사항 정의서 | [📌 바로가기](https://github.com/toilet-project/docs) |
+| **메인 API** | **`toilet-api`** | 위치 기반 조회 및 커뮤니티 REST API 서버 | [📌 바로가기](https://github.com/toilet-project/toilet-api) |
+| **어드민 API** | **`toilet-admin-api`** | 화장실 데이터 관리 및 사용자 요청 승인 서버 | [📌 바로가기](https://github.com/toilet-project/toilet-admin-api) |
+| **배치** | **`toilet-batch`** | 공공데이터 매일 02시 자동 동기화(Upsert) 서버 | [📌 바로가기](https://github.com/toilet-project/toilet-batch) |
+| **프론트엔드** | **`toilet-web`** | React + 카카오맵 SDK 기반 웹 클라이언트 | [📌 바로가기](https://github.com/toilet-project/toilet-web) |
+| **조직 설정** | **`.github`** | Organization 프로필 및 공통 설정 문서 | [📌 바로가기](https://github.com/toilet-project/.github) |
 
----
+<br/>
 
-## 📌 1. 프로젝트 개요 (Overview)
+## 🛠️ Tech Stack
 
-* **프로젝트명**: 위치 기반 공중화장실 정보 공유 서비스
-* **목표**:
-  * 공공데이터를 활용한 정확한 위치 기반 공중화장실 데이터 제공
-  * 최소 기능 제품(MVP) 구축 후, 사용자 편의 기능(Nice-To-Have) 단계별 확장
-* **활용 공공데이터**: 행정안전부 `공중화장실정보 조회서비스` (승인 완료)
+### Backend & Database
+![Java](https://img.shields.io/badge/Java_21-007396?style=for-the-badge&logo=java&logoColor=white)
+![SpringBoot](https://img.shields.io/badge/Spring_Boot_3.3.5-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)
+![SpringCloud](https://img.shields.io/badge/Spring_Cloud-6DB33F?style=for-the-badge&logo=spring&logoColor=white)
+![JPA](https://img.shields.io/badge/JPA_/_QueryDSL-59666C?style=for-the-badge&logo=hibernate&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL_8.0-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
 
----
+### Frontend & Infra
+![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS_(EC2/S3)-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white)
+![Nginx](https://img.shields.io/badge/Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
 
-## 🎯 2. 주요 기능 (Features)
+<br/>
 
-### 🚀 MVP (필수 구현 기능)
-* **공공데이터 연동 & DB 구축**: 행정안전부 OpenAPI 연동 (위도/경도, 운영시간, 개방시간, 남녀공용 여부 등 수집)
-* **위치 기반 화장실 검색 & 조회**:
-  * 사용자 현재 위치(GPS) 기준 주변 화장실 목록 및 지도 핀 표시
-  * 화장실 선택 시 상세 정보 제공 (주소, 운영시간, 기저귀 교환대 유무 등)
+## 🚀 Key Features
 
-### ✨ Nice-To-Have (추후 확장 기능)
-* **회원 관리**: Kakao / Google 소셜 로그인 지원
-* **사용자 참여형 데이터 등록**: 민간 개방 화장실 직접 등록 요청 기능
-* **커뮤니티 & 리뷰**: 화장실 청결도 평점 부여 및 사진 첨부 한 줄 리뷰 작성
-* **기타 인프라/도메인**: 서비스 전용 커스텀 도메인 구입 및 HTTPS 적용
+* **공공데이터 연동 (행정안전부)**: 전국 공중화장실 OpenAPI 연동 및 매일 새벽 2시 자동 증분 업데이트
+* **위치 기반 실시간 조회**: GPS 기반 현재 위치 주변 화장실 핀 표시 및 상세 정보(운영시간, 기저귀 교환대 등) 제공
+* **확장 예정 (Nice-To-Have)**:
+  * Kakao / Google 소셜 로그인
+  * 사용자 제보 기반 민간 개방화장실 직접 등록 요청
+  * 화장실 청결도 평점 및 사진 한 줄 리뷰
 
----
+<br/>
 
-## 🛠️ 3. 기술 스택 & 개발 환경 (Tech Stack)
+## 🏛️ Architecture v1.0
 
-| 구분 | 기술 스택 |
-| :--- | :--- |
-| **Language** | Java 21 LTS (Eclipse Temurin) |
-| **Framework** | Spring Boot 3.3.5, Spring Framework 6.1.13 |
-| **ORM / Data** | JPA, QueryDSL, MySQL 8.0 |
-| **Build & Tool** | Gradle, IntelliJ IDEA Ultimate |
-| **Testing** | JUnit5, AssertJ, Mockito |
-| **Infra & DevOps** | Docker, Nginx, Amazon S3, EC2, GitHub Actions, Jenkins |
-| **Modeling & Tools**| ERDCloud, GitHub Projects |
-
----
-
-## 🏛️ 4. 시스템 아키텍처 (Architecture v1.0)
 ![시스템 아키텍처](https://github.com/toilet-project/docs/blob/main/architecture.png?raw=true)
 
 
