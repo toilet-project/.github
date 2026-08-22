@@ -45,6 +45,8 @@
 ---
 
 ## 🏛️ 4. 시스템 아키텍처 (Architecture v1.0)
+![시스템 아키텍처](https://github.com/toilet-project/docs/blob/main/architecture.png?raw=true)
+
 
 ```text
 [ Client ] ──► [ AWS EC2 (Nginx + React) ] ──► [ On-premises Server ]
