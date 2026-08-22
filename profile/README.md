@@ -35,10 +35,10 @@
 | 구분 | 기술 스택 |
 | :--- | :--- |
 | **Language** | Java 21 LTS (Eclipse Temurin) |
-| **Framework** | Spring Boot 3.3.5, Spring Framework 6.1.13, Spring Cloud (Gateway, Config, Eureka, OpenFeign) |
-| **ORM / Data** | JPA, QueryDSL, MySQL 8.0, ElasticSearch 7.10 |
+| **Framework** | Spring Boot 3.3.5, Spring Framework 6.1.13 |
+| **ORM / Data** | JPA, QueryDSL, MySQL 8.0 |
 | **Build & Tool** | Gradle, IntelliJ IDEA Ultimate |
-| **Testing** | JUnit5, AssertJ, Mockito, SonarQube (Test Coverage 80% 이상 목표) |
+| **Testing** | JUnit5, AssertJ, Mockito |
 | **Infra & DevOps** | Docker, Nginx, Amazon S3, EC2, GitHub Actions, Jenkins |
 | **Modeling & Tools**| ERDCloud, GitHub Projects |
 
