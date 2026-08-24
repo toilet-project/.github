@@ -4,7 +4,7 @@
 
 > 공공데이터 기반으로 **내 주변 공중화장실을 빠르게 찾는 지도 서비스**입니다.
 
-🌐 **서비스**: [geupddong.com](https://geupddong.com)  
+🌐 **서비스**: [geupddong.com](https://geupddong.com)
 🔌 **Public API**: [api.geupddong.com](https://api.geupddong.com/api/health)
 
 ## 주요 기능
