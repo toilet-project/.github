@@ -1,39 +1,64 @@
-# 급똥 🚽
+<div align="center">
 
-<img src="images/geupddong-avatar.png" alt="급똥 아이콘" width="96" />
+<img src="images/geupddong-avatar.png" alt="급똥 아이콘" width="108" />
 
-> 공공데이터 기반으로 **내 주변 공중화장실을 빠르게 찾는 지도 서비스**입니다.
+# 🚽 급똥
 
-🌐 **서비스**: [geupddong.com](https://geupddong.com)
-🔌 **Public API**: [api.geupddong.com](https://api.geupddong.com/api/health)
+### 급할 때, 내 주변 공중화장실을 가장 빠르게 찾는 지도 서비스
 
-## 주요 기능
+[![서비스 열기](https://img.shields.io/badge/서비스%20열기-geupddong.com-17683A?style=for-the-badge)](https://geupddong.com)
+[![API 상태](https://img.shields.io/badge/API%20Health-확인하기-2E7D4F?style=for-the-badge)](https://api.geupddong.com/api/health)
 
-- 카카오맵 기반 지도 탐색과 장소 검색
-- 현재 위치 기반 공중화장실 조회 및 거리 표시
-- 지도 레벨에 따른 서버 클러스터링
-- 화장실 상세 정보: 개방시간, 주소, 편의·안전시설, 관리기관
+</div>
 
-## 아키텍처 v2.0
+## 💡 급똥이란?
+
+급똥은 공공데이터와 카카오맵을 활용해 현재 위치 또는 검색한 장소 주변의 공중화장실을 빠르게 찾는 서비스입니다.
+지도 위의 화장실 정보를 한눈에 보고, 필요한 상세 정보까지 바로 확인할 수 있도록 만들었습니다.
+
+| 🌐 서비스 | 🔌 Public API | 🔒 운영 환경 |
+| --- | --- | --- |
+| [geupddong.com](https://geupddong.com) | [api.geupddong.com](https://api.geupddong.com) | Cloudflare HTTPS · Mini PC Docker |
+
+## 🗂️ 저장소 구성
+
+| 구분 | 저장소 | 역할 |
+| --- | --- | --- |
+| 🗺️ Web | [toilet-web](https://github.com/toilet-project/toilet-web) | React·Vite 기반 지도 웹 클라이언트 |
+| 🔌 API | [toilet-api](https://github.com/toilet-project/toilet-api) | 지도 영역·화장실 상세 조회 REST API |
+| 🔄 Batch | [toilet-batch](https://github.com/toilet-project/toilet-batch) | 공공데이터 수집·정제·DB 반영 |
+| 🛠️ Admin | [toilet-admin-api](https://github.com/toilet-project/toilet-admin-api) | 데이터 관리용 관리자 API |
+| 📚 Docs | [docs](https://github.com/toilet-project/docs) | 명세, 아키텍처, 운영 가이드, WBS |
+
+## ✨ 주요 기능
+
+| 기능 | 설명 |
+| --- | --- |
+| 📍 현재 위치 기반 조회 | GPS 권한을 받아 내 주변 화장실을 지도에 표시합니다. |
+| 🔎 장소 검색 | 카카오 장소 검색 자동완성으로 원하는 위치로 지도를 이동합니다. |
+| 🧩 줌 레벨 클러스터링 | 지도 축척에 따라 마커·클러스터를 조정해 복잡도를 낮춥니다. |
+| 🚻 상세 정보 카드 | 주소, 개방시간, 설치연월, 편의·안전시설, 거리 정보를 제공합니다. |
+| 📋 주소 복사·시설 위치 | 주소를 복사하고 비상벨·CCTV·기저귀 교환대 위치를 확인합니다. |
+| 🔄 데이터 갱신 | 배치 서버가 공공데이터를 수집·정제해 운영 DB를 갱신합니다. |
+
+## 🏗️ 아키텍처
 
 ![급똥 아키텍처 v2](https://raw.githubusercontent.com/toilet-project/docs/main/architecture-v2.svg)
 
-- 외부 웹·API는 Cloudflare를 통해 HTTPS로 공개합니다.
-- Mini PC(Ubuntu)에서 Docker로 API, Batch, Admin, MySQL을 운영하고 Nginx가 API를 프록시합니다.
-- GitHub Actions → Docker Hub → SSH/Docker Compose로 서버 배포를 자동화합니다.
+```text
+사용자 → Cloudflare HTTPS → geupddong.com (React + Vite)
+                          └→ api.geupddong.com → Nginx → API / Batch / Admin / MySQL
+```
 
-자세한 내용은 [아키텍처 v2 문서](https://github.com/toilet-project/docs/blob/main/architecture-v2.md)를 참고하세요.
+- 외부 요청은 Cloudflare와 Nginx를 거쳐 HTTPS로 처리합니다.
+- 서버는 Mini PC Docker Compose에서 구동되며, API·Batch·Admin은 MySQL을 공유합니다.
+- GitHub Actions가 Docker Hub 이미지 빌드 후 SSH 배포를 수행합니다.
 
-## 저장소
+## 📖 더 알아보기
 
-| 역할 | 저장소 | 설명 |
-| --- | --- | --- |
-| 문서 | [docs](https://github.com/toilet-project/docs) | 요구사항, API/DB 명세, 아키텍처·운영 가이드 |
-| 웹 | [toilet-web](https://github.com/toilet-project/toilet-web) | React + TypeScript + Kakao Maps 클라이언트 |
-| Public API | [toilet-api](https://github.com/toilet-project/toilet-api) | Spring Boot REST API, 지도 조회·상세 조회 |
-| Batch | [toilet-batch](https://github.com/toilet-project/toilet-batch) | 공공데이터 동기화 및 DB upsert |
-| Admin API | [toilet-admin-api](https://github.com/toilet-project/toilet-admin-api) | 운영 데이터 관리 API |
-
-## 기술 스택
-
-`React` · `TypeScript` · `Kakao Maps` · `Java 21` · `Spring Boot` · `JPA` · `MySQL` · `Docker` · `Nginx` · `Cloudflare` · `GitHub Actions`
+| 문서 | 내용 |
+| --- | --- |
+| [아키텍처 v2](https://github.com/toilet-project/docs/blob/main/architecture-v2.md) | 구성 요소, 데이터 흐름, 외부 공개 원칙 |
+| [운영 가이드](https://github.com/toilet-project/docs/blob/main/operations.md) | 도메인, HTTPS, 배포 및 비밀정보 관리 |
+| [API 명세](https://github.com/toilet-project/docs/blob/main/api_spec.md) | 지도 영역 조회와 화장실 상세 조회 |
+| [WBS](https://github.com/orgs/toilet-project/projects/2/views/2) | 프로젝트 일정과 작업 현황 |
