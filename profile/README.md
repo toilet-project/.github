@@ -37,21 +37,11 @@
 
 ## 🧭 서비스가 동작하는 방식
 
-```mermaid
-flowchart LR
-    U([사용자]) --> S[GPS · 장소 검색]
-    S --> M[지도 탐색 · 상세 확인]
-    M --> R[위치 · 개방시간 제보]
-    R --> A[관리자 지도 비교 · 검토]
-    A --> H[좌표 · 주소 반영<br/>변경 이력 · 감사 로그]
-    H -. 데이터 품질 향상 .-> M
-    B[매일 02:00 KST<br/>공공데이터 증분 배치] --> H
-
-    classDef primary fill:#EAF6EF,stroke:#17683A,color:#123D26,stroke-width:1.5px;
-    classDef accent fill:#FFF3E5,stroke:#E98224,color:#7A3F08,stroke-width:1.5px;
-    class U,S,M,R,A,H primary;
-    class B accent;
-```
+<p align="center">
+  <a href="images/service-flow.svg">
+    <img src="images/service-flow.svg" alt="사용자 탐색부터 제보, 관리자 검토, 데이터 개선으로 이어지는 급똥 서비스 흐름" width="900" />
+  </a>
+</p>
 
 ## 🧩 Engineering Highlights
 

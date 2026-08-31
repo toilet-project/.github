@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 510" role="img" aria-labelledby="title description">
+  <title id="title">급똥 서비스 동작 흐름</title>
+  <desc id="description">사용자의 위치 검색부터 지도 탐색, 제보, 관리자 검토, 데이터 반영까지의 흐름과 매일 실행되는 공공데이터 배치를 보여줍니다.</desc>
+
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F7FBF8" />
+      <stop offset="1" stop-color="#EEF7F1" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="7" flood-color="#123D26" flood-opacity="0.10" />
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#3D7756" />
+    </marker>
+    <marker id="accent-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#E98224" />
+    </marker>
+    <style>
+      .label { font: 700 19px Pretendard, "Noto Sans KR", "Apple SD Gothic Neo", sans-serif; fill: #173D29; }
+      .detail { font: 500 13px Pretendard, "Noto Sans KR", "Apple SD Gothic Neo", sans-serif; fill: #5D7466; }
+      .step { font: 800 13px Pretendard, "Noto Sans KR", "Apple SD Gothic Neo", sans-serif; fill: #FFFFFF; }
+      .flow { fill: none; stroke: #3D7756; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; marker-end: url(#arrow); }
+    </style>
+  </defs>
+
+  <rect width="920" height="510" rx="28" fill="url(#background)" />
+
+  <!-- First row: discovery -->
+  <path class="flow" d="M 270 130 H 340" />
+  <path class="flow" d="M 580 130 H 650" />
+
+  <!-- Second row: report and review -->
+  <path class="flow" d="M 770 180 V 255" />
+  <path class="flow" d="M 650 305 H 580" />
+  <path class="flow" d="M 340 305 H 270" />
+
+  <!-- Quality feedback loop -->
+  <path d="M 150 255 V 218 C 150 205 161 195 174 195 H 728 C 742 195 752 184 752 170" fill="none" stroke="#72A185" stroke-width="2.5" stroke-dasharray="7 7" stroke-linecap="round" marker-end="url(#arrow)" />
+  <rect x="350" y="183" width="220" height="26" rx="13" fill="#F7FBF8" />
+  <text x="460" y="201" text-anchor="middle" class="detail" fill="#3D7756">검증된 데이터로 다시 탐색 품질 향상</text>
+
+  <!-- Batch input -->
+  <path d="M 770 435 H 285 C 265 435 250 420 250 400 V 355" fill="none" stroke="#E98224" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#accent-arrow)" />
+
+  <g filter="url(#shadow)">
+    <g transform="translate(30 80)">
+      <rect width="240" height="100" rx="20" fill="#FFFFFF" stroke="#A7CEB6" stroke-width="2" />
+      <circle cx="24" cy="18" r="14" fill="#17683A" />
+      <text x="24" y="23" text-anchor="middle" class="step">1</text>
+      <text x="120" y="54" text-anchor="middle" class="label">사용자</text>
+      <text x="120" y="79" text-anchor="middle" class="detail">현재 위치 또는 원하는 장소</text>
+    </g>
+
+    <g transform="translate(340 80)">
+      <rect width="240" height="100" rx="20" fill="#FFFFFF" stroke="#A7CEB6" stroke-width="2" />
+      <circle cx="24" cy="18" r="14" fill="#17683A" />
+      <text x="24" y="23" text-anchor="middle" class="step">2</text>
+      <text x="120" y="54" text-anchor="middle" class="label">GPS · 장소 검색</text>
+      <text x="120" y="79" text-anchor="middle" class="detail">탐색 기준점 설정</text>
+    </g>
+
+    <g transform="translate(650 80)">
+      <rect width="240" height="100" rx="20" fill="#FFFFFF" stroke="#A7CEB6" stroke-width="2" />
+      <circle cx="24" cy="18" r="14" fill="#17683A" />
+      <text x="24" y="23" text-anchor="middle" class="step">3</text>
+      <text x="120" y="54" text-anchor="middle" class="label">지도 탐색 · 상세 확인</text>
+      <text x="120" y="79" text-anchor="middle" class="detail">거리·운영·편의 정보 조회</text>
+    </g>
+
+    <g transform="translate(650 255)">
+      <rect width="240" height="100" rx="20" fill="#FFFFFF" stroke="#A7CEB6" stroke-width="2" />
+      <circle cx="24" cy="18" r="14" fill="#17683A" />
+      <text x="24" y="23" text-anchor="middle" class="step">4</text>
+      <text x="120" y="54" text-anchor="middle" class="label">위치 · 개방시간 제보</text>
+      <text x="120" y="79" text-anchor="middle" class="detail">사용자가 오류와 변경 정보 전달</text>
+    </g>
+
+    <g transform="translate(340 255)">
+      <rect width="240" height="100" rx="20" fill="#FFFFFF" stroke="#A7CEB6" stroke-width="2" />
+      <circle cx="24" cy="18" r="14" fill="#17683A" />
+      <text x="24" y="23" text-anchor="middle" class="step">5</text>
+      <text x="120" y="54" text-anchor="middle" class="label">관리자 지도 비교 · 검토</text>
+      <text x="120" y="79" text-anchor="middle" class="detail">근거 확인 후 승인 또는 반려</text>
+    </g>
+
+    <g transform="translate(30 255)">
+      <rect width="240" height="100" rx="20" fill="#FFFFFF" stroke="#77B28D" stroke-width="2.5" />
+      <circle cx="24" cy="18" r="14" fill="#17683A" />
+      <text x="24" y="23" text-anchor="middle" class="step">6</text>
+      <text x="120" y="52" text-anchor="middle" class="label">데이터 반영</text>
+      <text x="120" y="73" text-anchor="middle" class="detail">좌표·주소·변경 이력</text>
+      <text x="120" y="92" text-anchor="middle" class="detail">감사 로그와 자동 갱신 보호</text>
+    </g>
+
+    <g transform="translate(650 390)">
+      <rect width="240" height="90" rx="20" fill="#FFF8F0" stroke="#E9A660" stroke-width="2" />
+      <circle cx="24" cy="18" r="14" fill="#E98224" />
+      <text x="24" y="23" text-anchor="middle" class="step">+</text>
+      <text x="120" y="52" text-anchor="middle" class="label" fill="#7A3F08">공공데이터 증분 배치</text>
+      <text x="120" y="77" text-anchor="middle" class="detail" fill="#8C6745">매일 02:00 KST 자동 동기화</text>
+    </g>
+  </g>
+</svg>
