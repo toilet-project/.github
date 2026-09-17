@@ -32,10 +32,10 @@
 
 <table>
   <tr>
-    <th width="25%">🗺️ FIND</th>
-    <th width="25%">⭐ SHARE</th>
-    <th width="25%">🛡️ VERIFY</th>
-    <th width="25%">🔄 IMPROVE</th>
+    <th width="25%">🗺️<br />FIND</th>
+    <th width="25%">⭐<br />SHARE</th>
+    <th width="25%">🛡️<br />VERIFY</th>
+    <th width="25%">🔄<br />IMPROVE</th>
   </tr>
   <tr align="center">
     <td>GPS·장소<br />거리·상세</td>
