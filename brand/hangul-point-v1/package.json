@@ -1,0 +1,12 @@
+{
+  "name": "geupddong-hangul-point-brand",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "node source/build-brand.cjs",
+    "verify": "node source/verify-brand.cjs"
+  },
+  "devDependencies": {
+    "sharp": "0.34.5"
+  }
+}

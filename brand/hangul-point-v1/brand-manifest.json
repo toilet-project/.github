@@ -1,0 +1,236 @@
+{
+  "id": "geupddong-hangul-point",
+  "version": "1.0.0",
+  "created": "2026-09-27",
+  "status": "Approved master artwork for the Hangul Point v1 rollout",
+  "selectedConcept": "Initial C / HANGUL POINT, paired ㄷ + dot + right location point",
+  "colors": {
+    "green": "#17683A",
+    "ink": "#153B2B",
+    "white": "#FFFFFF",
+    "black": "#000000"
+  },
+  "master": "source/hangul-point-symbol.svg",
+  "micro": "source/hangul-point-micro.svg",
+  "normalViewBox": [
+    0,
+    0,
+    256,
+    224
+  ],
+  "smallSizeRule": "Use micro optical mark at 16–32px; normal mark at 48px and above; inspect 33–47px at actual size. Favicon family uses the micro layout consistently at every exported size.",
+  "locales": {
+    "ko": "symbol + custom outlined 급똥",
+    "nonKo": "symbol + existing Jua GEUP / DDONG left-aligned two-line wordmark"
+  },
+  "fontSource": {
+    "family": "Jua Regular",
+    "sha256": "769677aef240bfc3b9965f2b50748075bff885e6c6992fc591a3fb268279f898",
+    "license": "licenses/Jua-OFL.txt"
+  },
+  "exports": [
+    {
+      "file": "svg/symbol-green.svg",
+      "bytes": 765,
+      "sha256": "02f40e3b00088348291dd55a1561015cfea6b1556550bd1672b6870dc3a34a7f"
+    },
+    {
+      "file": "png/symbol-green-1024.png",
+      "bytes": 27648,
+      "sha256": "c63ac9ac0cd0dc50ac873b4a775f75e2c79dbbebe3e49c764953492bcc70be50",
+      "width": 1024,
+      "height": 896,
+      "hasAlpha": true
+    },
+    {
+      "file": "svg/symbol-white.svg",
+      "bytes": 765,
+      "sha256": "970d75bce524d8f068c8ac6f6a3a717b36a867b8c80ccff4be506a8694f4cb93"
+    },
+    {
+      "file": "png/symbol-white-1024.png",
+      "bytes": 17790,
+      "sha256": "0b2d7c375791a529593d9099f1669c666e7a087f59dc56e261bcc4ff8f6bbc47",
+      "width": 1024,
+      "height": 896,
+      "hasAlpha": true
+    },
+    {
+      "file": "svg/symbol-black.svg",
+      "bytes": 765,
+      "sha256": "bcc73129b31e3faed929ae6288cafb17bda2936c40609ff4b963a704bf9579cb"
+    },
+    {
+      "file": "png/symbol-black-1024.png",
+      "bytes": 22954,
+      "sha256": "b358a4531dc4b4ab10a0ecc44c88ee84c26ed3a297e1c346b08460804fe780b2",
+      "width": 1024,
+      "height": 896,
+      "hasAlpha": true
+    },
+    {
+      "file": "svg/symbol-currentcolor.svg",
+      "bytes": 877,
+      "sha256": "c77baa55c0eb2c35a33d48f05bff338c046d50632606e60ce7eb07de1605209d"
+    },
+    {
+      "file": "svg/symbol-micro.svg",
+      "bytes": 812,
+      "sha256": "8f3ab5347137b8bf38f401661723ce99f3090e73dc678ec8e35ee37f46569fc2"
+    },
+    {
+      "file": "svg/wordmark-ko.svg",
+      "bytes": 1744,
+      "sha256": "4cb8b70c2e0340d0197ac4f3934dd33a260b12db01009d9fec8b2968e5362aad"
+    },
+    {
+      "file": "svg/lockup-ko.svg",
+      "bytes": 2076,
+      "sha256": "9e85dd490845b8d74e490b7e9c666d5741b6e19150b4b4e8ef973161ea96a4d6"
+    },
+    {
+      "file": "png/lockup-ko.png",
+      "bytes": 49539,
+      "sha256": "6a9c8ac1d6043a7c38c22c7de3edcb89d52dcb76fcc2c690f0fb62ea438f807d",
+      "width": 1938,
+      "height": 696,
+      "hasAlpha": true
+    },
+    {
+      "file": "svg/lockup-ko-white.svg",
+      "bytes": 2076,
+      "sha256": "45d3c618b81f9e932460614d5b6b92bfbf4db649ec952a82603cb63503f656ab"
+    },
+    {
+      "file": "png/lockup-ko-white.png",
+      "bytes": 31579,
+      "sha256": "0dc82cc817a99b77d06b44e70f2dd0281912d7cb10be5ce7587ae6969f7644b2",
+      "width": 1938,
+      "height": 696,
+      "hasAlpha": true
+    },
+    {
+      "file": "svg/wordmark-en.svg",
+      "bytes": 20792,
+      "sha256": "203c244fb4cb545a6a236dad65af88bc1f5ce45447903d2e14812459d4e996ac"
+    },
+    {
+      "file": "svg/lockup-en.svg",
+      "bytes": 21203,
+      "sha256": "4eb7c929c25ea21c8a507dbfefcfea56ae4637ef358177f481d35afe4b1f7ab1"
+    },
+    {
+      "file": "png/lockup-en.png",
+      "bytes": 69780,
+      "sha256": "1921f7b6927535348696aaf4a83c4134ad259312c02b7619faefd890f19eeb68",
+      "width": 1866,
+      "height": 696,
+      "hasAlpha": true
+    },
+    {
+      "file": "svg/lockup-en-white.svg",
+      "bytes": 21203,
+      "sha256": "3c16e5b515311a6a34242527b8ac1f02d258f343aedcf0ba555abb514d11b4a6"
+    },
+    {
+      "file": "png/lockup-en-white.png",
+      "bytes": 48566,
+      "sha256": "46ada73e87bf7555588d2f869b06994852cafcd699cee5908aa80ab2bb882fe1",
+      "width": 1866,
+      "height": 696,
+      "hasAlpha": true
+    },
+    {
+      "file": "svg/app-icon-square.svg",
+      "bytes": 862,
+      "sha256": "dd3e55a36c04fdd789eba2c4393a4d742444e4eebf001513531a9551c99175e1"
+    },
+    {
+      "file": "png/app-icon-1024.png",
+      "bytes": 28824,
+      "sha256": "9d6e0f7c73668d3aeffac8685b0502f10b5740c32e75de84de6d853f9e45d5cb",
+      "width": 1024,
+      "height": 1024,
+      "hasAlpha": false
+    },
+    {
+      "file": "png/avatar-1080.png",
+      "bytes": 31443,
+      "sha256": "aaa7dbe0d6e2f2521be1672c5b169f4c0b4848d9a11142fdeb451c52f46b56af",
+      "width": 1080,
+      "height": 1080,
+      "hasAlpha": false
+    },
+    {
+      "file": "svg/favicon-micro.svg",
+      "bytes": 865,
+      "sha256": "9d41ff15f04a020156273574af57d97f618d27a1028493dc404dc6ab369b7b92"
+    },
+    {
+      "file": "png/favicon-16.png",
+      "bytes": 387,
+      "sha256": "7f947551619b915a1d5f3877334052236dba3295b71a84215b85ac9b19eafb80",
+      "width": 16,
+      "height": 16,
+      "hasAlpha": false
+    },
+    {
+      "file": "png/favicon-24.png",
+      "bytes": 513,
+      "sha256": "11d18523956f69c3a0df0d509f856cc7243c9b3c71be3d3391c7c85c668fdf12",
+      "width": 24,
+      "height": 24,
+      "hasAlpha": false
+    },
+    {
+      "file": "png/favicon-32.png",
+      "bytes": 631,
+      "sha256": "6ce0384048e6a49cbda4b030d43ad2f3e3607b4c3929fda3609d21770e3628e4",
+      "width": 32,
+      "height": 32,
+      "hasAlpha": false
+    },
+    {
+      "file": "png/favicon-48.png",
+      "bytes": 845,
+      "sha256": "d98da57ee03ab33432cced8b70fe8c43e99acc822351a2acea163f69d646b877",
+      "width": 48,
+      "height": 48,
+      "hasAlpha": false
+    },
+    {
+      "file": "png/favicon-64.png",
+      "bytes": 1104,
+      "sha256": "da565c11a581179faf6461f981c0fe0369183ec6196a9cb446bbf050ca626f6c",
+      "width": 64,
+      "height": 64,
+      "hasAlpha": false
+    },
+    {
+      "file": "preview/brand-board.svg",
+      "bytes": 31917,
+      "sha256": "480b71ea5136b3d7197973a0fdbdf3734b4600db7ad01e062acfdcf0b52e4d74"
+    },
+    {
+      "file": "preview/brand-board.png",
+      "bytes": 119449,
+      "sha256": "abd92d4ec6fa8a08598501ca13b153eaf56c183cd295548acaff03410c7cc838",
+      "width": 1640,
+      "height": 1110,
+      "hasAlpha": true
+    },
+    {
+      "file": "preview/small-size-check.svg",
+      "bytes": 14053,
+      "sha256": "c5789ce1d2a454de88e283f222d9133863f9ba92f3b37c86c5c809555a9570d4"
+    },
+    {
+      "file": "preview/small-size-check.png",
+      "bytes": 56645,
+      "sha256": "9bcfa2c15abdd79ff84a0701e1bb772a7d2dcf96a39929b47a1adc52ec0d2753",
+      "width": 1200,
+      "height": 750,
+      "hasAlpha": true
+    }
+  ]
+}

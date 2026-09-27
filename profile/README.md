@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="images/geupddong-avatar.png" alt="급똥 아이콘" width="112" />
+<img src="images/geupddong-avatar.png" alt="급똥 Hangul Point 로고" width="112" />
 
 # 급똥
 

@@ -1,0 +1,291 @@
+{
+  "checkedAt": "2026-09-27T06:23:54.656Z",
+  "pass": true,
+  "checks": [
+    {
+      "name": "app-icon-square.svg vector independence",
+      "pass": true,
+      "detail": "Paths/shapes only; no raster, external assets, or live font dependency."
+    },
+    {
+      "name": "favicon-micro.svg vector independence",
+      "pass": true,
+      "detail": "Paths/shapes only; no raster, external assets, or live font dependency."
+    },
+    {
+      "name": "lockup-en-white.svg vector independence",
+      "pass": true,
+      "detail": "Paths/shapes only; no raster, external assets, or live font dependency."
+    },
+    {
+      "name": "lockup-en.svg vector independence",
+      "pass": true,
+      "detail": "Paths/shapes only; no raster, external assets, or live font dependency."
+    },
+    {
+      "name": "lockup-ko-white.svg vector independence",
+      "pass": true,
+      "detail": "Paths/shapes only; no raster, external assets, or live font dependency."
+    },
+    {
+      "name": "lockup-ko.svg vector independence",
+      "pass": true,
+      "detail": "Paths/shapes only; no raster, external assets, or live font dependency."
+    },
+    {
+      "name": "symbol-black.svg vector independence",
+      "pass": true,
+      "detail": "Paths/shapes only; no raster, external assets, or live font dependency."
+    },
+    {
+      "name": "symbol-currentcolor.svg vector independence",
+      "pass": true,
+      "detail": "Paths/shapes only; no raster, external assets, or live font dependency."
+    },
+    {
+      "name": "symbol-green.svg vector independence",
+      "pass": true,
+      "detail": "Paths/shapes only; no raster, external assets, or live font dependency."
+    },
+    {
+      "name": "symbol-micro.svg vector independence",
+      "pass": true,
+      "detail": "Paths/shapes only; no raster, external assets, or live font dependency."
+    },
+    {
+      "name": "symbol-white.svg vector independence",
+      "pass": true,
+      "detail": "Paths/shapes only; no raster, external assets, or live font dependency."
+    },
+    {
+      "name": "wordmark-en.svg vector independence",
+      "pass": true,
+      "detail": "Paths/shapes only; no raster, external assets, or live font dependency."
+    },
+    {
+      "name": "wordmark-ko.svg vector independence",
+      "pass": true,
+      "detail": "Paths/shapes only; no raster, external assets, or live font dependency."
+    },
+    {
+      "name": "symbol-green-1024.png alpha",
+      "pass": true,
+      "detail": {
+        "hasAlpha": true,
+        "transparentPixels": 488645,
+        "opaquePixels": 426033
+      }
+    },
+    {
+      "name": "symbol-white-1024.png alpha",
+      "pass": true,
+      "detail": {
+        "hasAlpha": true,
+        "transparentPixels": 488645,
+        "opaquePixels": 426033
+      }
+    },
+    {
+      "name": "symbol-black-1024.png alpha",
+      "pass": true,
+      "detail": {
+        "hasAlpha": true,
+        "transparentPixels": 488645,
+        "opaquePixels": 426033
+      }
+    },
+    {
+      "name": "lockup-ko.png alpha",
+      "pass": true,
+      "detail": {
+        "hasAlpha": true,
+        "transparentPixels": 727152,
+        "opaquePixels": 610710
+      }
+    },
+    {
+      "name": "lockup-en.png alpha",
+      "pass": true,
+      "detail": {
+        "hasAlpha": true,
+        "transparentPixels": 833361,
+        "opaquePixels": 452802
+      }
+    },
+    {
+      "name": "lockup-ko-white.png alpha",
+      "pass": true,
+      "detail": {
+        "hasAlpha": true,
+        "transparentPixels": 727152,
+        "opaquePixels": 610710
+      }
+    },
+    {
+      "name": "lockup-en-white.png alpha",
+      "pass": true,
+      "detail": {
+        "hasAlpha": true,
+        "transparentPixels": 833361,
+        "opaquePixels": 452802
+      }
+    },
+    {
+      "name": "app-icon-1024.png square opaque",
+      "pass": true,
+      "detail": {
+        "width": 1024,
+        "height": 1024,
+        "hasAlpha": false
+      }
+    },
+    {
+      "name": "avatar-1080.png square opaque",
+      "pass": true,
+      "detail": {
+        "width": 1080,
+        "height": 1080,
+        "hasAlpha": false
+      }
+    },
+    {
+      "name": "symbol-green-1024.png three distinct components",
+      "pass": true,
+      "detail": {
+        "componentPixelAreas": [
+          201863,
+          180426,
+          45239
+        ]
+      }
+    },
+    {
+      "name": "favicon-16.png three distinct components",
+      "pass": true,
+      "detail": {
+        "componentPixelAreas": [
+          35,
+          32,
+          4
+        ]
+      }
+    },
+    {
+      "name": "favicon-24.png three distinct components",
+      "pass": true,
+      "detail": {
+        "componentPixelAreas": [
+          98,
+          87,
+          16
+        ]
+      }
+    },
+    {
+      "name": "favicon-32.png three distinct components",
+      "pass": true,
+      "detail": {
+        "componentPixelAreas": [
+          171,
+          150,
+          32
+        ]
+      }
+    },
+    {
+      "name": "favicon-48.png three distinct components",
+      "pass": true,
+      "detail": {
+        "componentPixelAreas": [
+          362,
+          321,
+          74
+        ]
+      }
+    },
+    {
+      "name": "favicon-64.png three distinct components",
+      "pass": true,
+      "detail": {
+        "componentPixelAreas": [
+          691,
+          608,
+          130
+        ]
+      }
+    },
+    {
+      "name": "preview link ../svg/symbol-green.svg",
+      "pass": true,
+      "detail": "Local asset exists."
+    },
+    {
+      "name": "preview link ../svg/lockup-ko.svg",
+      "pass": true,
+      "detail": "Local asset exists."
+    },
+    {
+      "name": "preview link ../svg/lockup-en.svg",
+      "pass": true,
+      "detail": "Local asset exists."
+    },
+    {
+      "name": "preview link ../png/app-icon-1024.png",
+      "pass": true,
+      "detail": "Local asset exists."
+    },
+    {
+      "name": "preview link ../png/avatar-1080.png",
+      "pass": true,
+      "detail": "Local asset exists."
+    },
+    {
+      "name": "preview link ../png/favicon-16.png",
+      "pass": true,
+      "detail": "Local asset exists."
+    },
+    {
+      "name": "preview link ../png/favicon-24.png",
+      "pass": true,
+      "detail": "Local asset exists."
+    },
+    {
+      "name": "preview link ../png/favicon-32.png",
+      "pass": true,
+      "detail": "Local asset exists."
+    },
+    {
+      "name": "preview link ../png/favicon-48.png",
+      "pass": true,
+      "detail": "Local asset exists."
+    },
+    {
+      "name": "preview link ../png/favicon-64.png",
+      "pass": true,
+      "detail": "Local asset exists."
+    },
+    {
+      "name": "preview link ../svg/symbol-green.svg",
+      "pass": true,
+      "detail": "Local asset exists."
+    },
+    {
+      "name": "preview link ../svg/lockup-ko.svg",
+      "pass": true,
+      "detail": "Local asset exists."
+    },
+    {
+      "name": "preview link ../svg/lockup-en.svg",
+      "pass": true,
+      "detail": "Local asset exists."
+    },
+    {
+      "name": "preview link ../png/app-icon-1024.png",
+      "pass": true,
+      "detail": "Local asset exists."
+    }
+  ],
+  "limitations": [
+    "Vector and raster asset QA only. No production deployment, native app build, screen-reader pass, or physical device validation performed."
+  ]
+}
