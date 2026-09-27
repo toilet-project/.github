@@ -82,7 +82,7 @@ node source/verify-brand.cjs
 ```
 
 이 폴더에서 pnpm install --frozen-lockfile로 고정된 sharp 의존성을 설치한 뒤 pnpm build와 pnpm verify로 재생성·검증합니다.
-영문 SVG를 폰트에서 다시 추출해야 할 때만 Windows System.Drawing과 source/outline-english.ps1을 사용합니다. -FontFile과 -OutputFile로 경로를 지정할 수 있습니다. 일반 자산 재생성에는 폰트 파일이 필요 없습니다.
+영문 SVG를 폰트에서 다시 추출해야 할 때만 Windows System.Drawing과 source/outline-english.ps1을 사용합니다. -FontFile과 -OutputFile로 경로를 지정할 수 있습니다. 제품 로고 재생성에는 폰트 파일이 필요 없습니다. 검수 보드의 설명문은 시스템 한글 폰트를 사용하므로 환경에 따라 보드 PNG의 글꼴과 해시가 달라질 수 있습니다.
 
 ## 검수 결과
 
