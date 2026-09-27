@@ -1,0 +1,3 @@
+# SVG byte hashes are part of the versioned brand manifest.
+brand/hangul-point-v1/**/*.svg -text
+brand/hangul-point-v1/brand-manifest.json text eol=lf
